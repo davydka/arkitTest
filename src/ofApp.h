@@ -3,6 +3,7 @@
 #include "ofxiOS.h"
 #include <ARKit/ARKit.h>
 #include "ofxARKit.h"
+#include "ofxAssimpModelLoader.h"
 class ofApp : public ofxiOSApp {
     
 public:
@@ -41,6 +42,9 @@ public:
     ofCamera camera;
     vector < matrix_float4x4 > mats;
     vector<ARAnchor*> anchors;
+    
+    ofxAssimpModelLoader model;
+    ofLight light;
 };
 
 
